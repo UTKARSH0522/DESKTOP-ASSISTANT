@@ -82,4 +82,8 @@ def sendEmail(to, content):
                 content = takeCommand()
                 to = "utkarsh.saxena_cs18@gmail.com"    
                 sendEmail(to, content)
+                speak("Email has been sent!")
+            except Exception as e:
+                print(e)
+                speak("Sorry . I am not able to send this email")
         
