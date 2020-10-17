@@ -59,6 +59,7 @@ def sendEmail(to, content):
             speak("According to Wikipedia")
             print(results)
             speak(results)
-            
+             elif 'open youtube' in query:
+            webbrowser.open("youtube.com")
             
         
