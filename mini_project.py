@@ -85,5 +85,5 @@ def sendEmail(to, content):
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                
+                 speak("Sorry . I am not able to send this email")
         
