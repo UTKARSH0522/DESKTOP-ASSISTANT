@@ -39,5 +39,8 @@ def wishMe():
         print("Say that again please...")  
         return "None"
     return query
-
+def sendEmail(to, content):
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.ehlo()
+    server.starttls()
         
