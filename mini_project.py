@@ -57,6 +57,8 @@ def sendEmail(to, content):
             query = query.replace("wikipedia", "")
             results = wikipedia.summary(query, sentences=2)
             speak("According to Wikipedia")
+            print(results)
+            speak(results)
             
             
         
