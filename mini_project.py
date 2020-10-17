@@ -76,4 +76,10 @@ def sendEmail(to, content):
             elif 'open code' in query:
             codePath = "C:\\Users\\UTKARSH\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
+            elif 'email to utkarsh' in query:
+            try:
+                speak("What should I say?")
+                content = takeCommand()
+                to = "utkarsh.saxena_cs18@gmail.com"    
+                sendEmail(to, content)
         
